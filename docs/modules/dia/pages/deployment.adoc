@@ -1,0 +1,42 @@
+= Deployment Diagram
+Marc Guillen <mguillen@pictet.com>
+v1.0, 2022-05-01
+
+The Deployment Diagram describes the static, instantiated deployment view of the system. Container instances and related systems instances are mapped to deployment nodes, highlighting the physical static topology and associated technologies. This diagram is intended to technical users inside and outside the product team such as developers and architects.
+
+[.helptext]
+****
+[NOTE]
+====
+* *Scope:* One or more software systems.
+* *Primary elements:* Deployment nodes, software system instances, and container instances.
+* *Supporting elements:* Infrastructure nodes used in the deployment of the software system.
+* *Intended audience:* Technical people inside and outside of the software development team; including software architects, developers, infrastructure architects, and operations/support staff.
+* *Description:* A Deployment Diagram allows you to illustrate how software systems and/or containers in the static model are mapped to infrastructure. This deployment diagram is inspired upon a UML deployment diagram, although simplified slightly to show the mapping between containers and deployment nodes. 
+** A deployment node is something like physical infrastructure (e.g. a physical server or device), virtualised infrastructure (e.g. IaaS, PaaS, a virtual machine), containerised infrastructure (e.g. a Docker container), an execution environment (e.g. a database server, application server or web server), etc. Deployment nodes can be nested. 
+** You may also want to include network infrastructure nodes such as DNS services, load balancers, firewalls, etc. 
+** In a cloud context, when the deployment node is obvious you can simply rely on its icon (like for global or managed services). Be sure to highlight the full context of the deployment nodes hierarchies, at least cloud/corporate datacenter on hybrid solutions, region and specify the AZ, account, VPC, Subnet when necessary. It is also a good idea to show CIDR of network resources. 
+** Keep in mind that the goal is really to show the real "deployment", i.e. how your components maps the infrastructure and services. 
+** It is not enough to only show "infrastructure" diagrams that we often view on-line or on AWS blogs that are more like a blueprint infrastructure pattern. 
+** For reference , look at this post for an explanation: https://dev.to/simonbrown/cloud-architecture-diagrams-3pbm
+====
+****
+
+*Date:* YYYY-MM-DD
+
+*Status:* Proposed | Accepted | Deprecated
+
+[.helptext]
+****
+[NOTE]
+====
+Example:
+Link an image exported from draw.io as an image -OR-
+Link directly a kroki rendered images based on structurizr
+====
+****
+
+[structurizr,main,svg,view-key=LiveDeployment]
+----
+include::ROOT:partial$/main.dsl[]
+----

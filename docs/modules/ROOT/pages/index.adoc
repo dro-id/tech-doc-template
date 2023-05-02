@@ -1,1 +1,47 @@
-=== Yeah
+= Architecture Documentation
+Marc Guillen <mguillen@pictet.com>
+v1.0, 2022-05-01
+
+Welcome to the architecture documentation for PAMTech Systems!
+
+Following agile good practices this documentation follows a documentation-as-code principle. It follows a _just enough_ documentation about the system architecture, maintained by the product team with the help of the platform architect.
+
+It should contain:
+
+* A minimalistic Architecture Design Document (ADD) highlighting the most important design drivers, the context, the environment, the decomposition into containers/components and finally the deployment of the system. Basically anything that would give context to the code! This is optional but recommended for all new systems/products.
+* A set of Architecture Diagrams showing visually the context, containers, components and deployment following a C4 Model
+* The Architecture Design Records (ADR) for the system, martializing the team consensus on significant architectural decisions
+
+== Contributing
+
+Anyone in PAM can contribute to the template and knowledge base!
+
+Feel free to submit PR if you think the documentation needs additions or clarifications. 
+Architects acts as maintainer and will review your changes. 
+
+== FAQ
+
+=== How to get started?
+
+. Just clone and degit the current repository
+. Rename the placeholders to reflect your product
+. Replace _infotext_ with your content!
+
+
+[.helptext]
+****
+[NOTE]
+====
+The template have info bubble (like this one) to guide you through the application of those artefacts.
+Of course your architect is at disposal of course to walk you through also!
+
+To get started focus on
+. Creating and maintaining your architecture diagrams
+. Start with System Context Diagram first
+. Then deep dive with a Container Diagram 
+. If you feel the need deep dive even more, go on with a Components Diagram but this a optional
+. A Deployment Diagram is almost always helpful, especially in Cloud Environments
+. Bootstrapping your architecture decision log and start logging your decision that impact your architecture
+. The ADD is optional for now, but it might be a valuable tool when we bootstrap a new system
+====
+****

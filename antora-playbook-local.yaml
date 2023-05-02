@@ -1,0 +1,23 @@
+site:
+  title: Architecture Documentation Template
+  url: http://localhost:8080
+content:
+  sources:
+    - url: ./
+      start_path: docs
+      branches: HEAD
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+asciidoc:
+  attributes:
+    sectanchors: true
+    kroki-server-url: https://kroki.io
+    kroki-default-format: svg@
+    kroki-fetch-diagram: false
+    imagesoutdir: img/
+  extensions:
+    - asciidoctor-kroki
+output:
+  dir: build/site

@@ -1,5 +1,8 @@
-name: archi-doc
-title: Architecture Documentation
+name: xxx-archi
+title: XXX Architecture
 version: 0.0.1
 nav:
   - modules/ROOT/nav.adoc
+  - modules/add/nav.adoc
+  - modules/adr/nav.adoc
+  - modules/dia/nav.adoc

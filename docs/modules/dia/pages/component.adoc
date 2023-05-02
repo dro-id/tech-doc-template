@@ -1,0 +1,36 @@
+= Component Diagram
+Marc Guillen <mguillen@pictet.com>
+v1.0, 2022-05-01
+
+The Component diagram shows how a container is made up of a number of "components", what each of those components are, their responsibilities and the technology/implementation details. This diagram that further refines the Container Diagram is intended to technical users inside and outside the product team such as developers and architects.
+
+[.helptext]
+****
+[NOTE]
+====
+* *Scope:* A single container.
+* *Primary elements:* Components within the container in scope.
+* *Supporting elements:* Containers (within the software system in scope) plus people and software systems directly connected to the components.
+* *Intended audience:* Software architects and developers.
+* *Description:* The Container System Diagram provides an good overview of the main building blocks of a system by the mean of the containers. Next you can zoom in and decompose each container further to identify the major structural building blocks and their interactions that are closer to codes structures.
+====
+****
+
+*Date:* YYYY-MM-DD
+
+*Status:* Proposed | Accepted | Deprecated
+
+[.helptext]
+****
+[NOTE]
+====
+Example:
+Link an image exported from draw.io as an image -OR-
+Link directly a kroki rendered images based on structurizr
+====
+****
+
+[structurizr,main,svg,view-key=Components]
+----
+include::ROOT:partial$/main.dsl[]
+----

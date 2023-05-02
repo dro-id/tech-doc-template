@@ -1,0 +1,8 @@
+// asciidoc settings
+:toc-title: table of contents
+
+// enable table-of-contents
+:toc:
+
+// where are images located?
+:imagesdir: ./images

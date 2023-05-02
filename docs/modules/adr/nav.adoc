@@ -1,0 +1,3 @@
+* xref:adr:adr.adoc[Decision Records]
+** xref:adr:00_template.adoc[]
+** xref:adr:01_use_architecture_adr.adoc[]
