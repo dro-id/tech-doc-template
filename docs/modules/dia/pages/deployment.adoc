@@ -38,5 +38,5 @@ Link directly a kroki rendered images based on structurizr
 
 [structurizr,main,svg,view-key=LiveDeployment]
 ----
-include::ROOT:partial$/main.dsl[]
+include::ROOT:partial$/workspace.dsl[]
 ----

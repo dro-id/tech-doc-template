@@ -1,1 +1,4 @@
 = Architecture Decision Records (ADR)
+
+include::../nav.adoc
+

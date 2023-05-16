@@ -1,0 +1,51 @@
+// Architecture Design Presentation
+// Run with: npx asciidoctor-revealjs slides/adp.adoc -o docs/modules/ROOT/partials/adp.html -r asciidoctor-kroki
+
+// revealjs settings
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.4.0
+:revealjs_theme: white
+:revealjs_history: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsBackArrows: faded
+:revealjs_progress: true
+:revealjs_slideNumber: h.v
+
+// architecture model
+:modeldir: ../models
+
+// Slides
+= Architecture Design Presentation
+
+== Slide 1
+
+* Foo
+* Bar
+* World
+
+== System Context
+
+[structurizr,main,svg,view-key=SystemContext]
+----
+include::{modeldir}/workspace.dsl[]
+----
+
+== Containers
+
+[structurizr,main,svg,view-key=Containers]
+----
+include::{modeldir}/workspace.dsl[]
+----
+
+== Components
+
+[structurizr,main,svg,view-key=Components]
+----
+include::{modeldir}/workspace.dsl[]
+----
+
+== Deployment
+
+[structurizr,main,svg,view-key=LiveDeployment]
+----
+include::{modeldir}/workspace.dsl[]
+----

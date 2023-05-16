@@ -22,15 +22,15 @@ Describe the problem that this decision addresses. Should be 50 words max.
 
 [.helptext]
 ****
-⚪ proposed
+⚪ Proposed
 
-🟢 accepted
+🟢 Accepted
 
-🔴 rejected
+🔴 Rejected
 
-⚫ deprecated
+⚫ Deprecated
 
-🟡 superseded by <link new adr>
+🟡 Superseded by <link new adr>
 ****
 
 == Context
