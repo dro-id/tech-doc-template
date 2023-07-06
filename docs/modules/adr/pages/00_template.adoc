@@ -6,7 +6,7 @@ v1.0, 2022-05-01
 ****
 Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run.
 
-File name should be similar to the title and follow the `ADR - <number> <shortname>` style with each ADR being sequentially numbered.
+File name should be similar to the title and follow the `ADR <number> - <shortname>` style with each ADR being sequentially numbered.
 ****
 
 == Overview
@@ -22,6 +22,8 @@ Describe the problem that this decision addresses. Should be 50 words max.
 
 [.helptext]
 ****
+ADRs are immutable once Accepted/Rejected/Deprecated, please superseed your ADR if you review a decision.
+
 ⚪ Proposed
 
 🟢 Accepted

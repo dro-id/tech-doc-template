@@ -8,7 +8,7 @@ include::sections/config.adoc[]
 :toc-title: Table of Contents
 
 // About
-Based on arc42 architecture documentation template
+Based on the excellent arc42 architecture documentation template
 
 * revision number: 8.2 EN
 * revision date: January 2023

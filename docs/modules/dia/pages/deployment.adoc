@@ -30,9 +30,12 @@ The Deployment Diagram describes the static, instantiated deployment view of the
 ****
 [NOTE]
 ====
-Example:
-Link an image exported from draw.io as an image -OR-
-Link directly a kroki rendered images based on structurizr
+The goal is to communicate the visual representation of your system with the https://c4model.com[C4 Model] convention. 
+
+To produce the schema you have basically two possibilities:
+
+. *draw and export* - Draw and export as an image from https://app.diagrams.net/[diagram.net]. Diagram has C4 shapes by default.
+. *model and generate* - Model with https://structurizr.com/dsl[structurizr DSL], the schema will be generated automatically with https://kroki.io/[kroki].
 ====
 ****
 

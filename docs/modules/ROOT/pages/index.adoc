@@ -6,18 +6,18 @@ Welcome to the architecture documentation for PAMTech Systems!
 
 Following agile good practices this documentation follows a documentation-as-code principle. It follows a _just enough_ documentation about the system architecture, maintained by the product team with the help of the platform architect.
 
-It should contain:
+It contains:
 
 * A minimalistic Architecture Design Document (ADD) highlighting the most important design drivers, the context, the environment, the decomposition into containers/components and finally the deployment of the system. Basically anything that would give context to the code! This is optional but recommended for all new systems/products.
-* A set of Architecture Diagrams showing visually the context, containers, components and deployment following a C4 Model
-* The Architecture Design Records (ADR) for the system, martializing the team consensus on significant architectural decisions
+* A set of Architecture Diagrams showing visually the context, containers, components and deployment following a https://c4model.com[C4 Model]. A picture is worth thousand words!
+* The https://github.com/joelparkerhenderson/architecture-decision-record[Architecture Design Records (ADR)] for the system, martializing the team consensus on significant architectural decisions. There are many different, we choose an aaproach proposed by https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Michael Nygard].
 
 == Contributing
 
 Anyone in PAM can contribute to the template and knowledge base!
 
 Feel free to submit PR if you think the documentation needs additions or clarifications. 
-Architects acts as maintainer and will review your changes. 
+Architects acts as maintainers and will review/discuss your submissions. 
 
 == FAQ
 
@@ -25,7 +25,7 @@ Architects acts as maintainer and will review your changes.
 
 . Just clone and degit the current repository
 . Rename the placeholders to reflect your product
-. Replace _infotext_ with your content!
+. Remove the _infotext_ and start to document!
 
 
 [.helptext]
@@ -33,15 +33,16 @@ Architects acts as maintainer and will review your changes.
 [NOTE]
 ====
 The template have info bubble (like this one) to guide you through the application of those artefacts.
-Of course your architect is at disposal of course to walk you through also!
+Of course your architect is at disposal to walk you through the template!
 
-To get started focus on
-. Creating and maintaining your architecture diagrams
-. Start with System Context Diagram first
+To get started focus on:
+
+. Creating and maintaining your architecture diagrams, along your changes or as part of your Definition-of-Done (DoD)
+. Start with a simple System Context Diagram
 . Then deep dive with a Container Diagram 
 . If you feel the need deep dive even more, go on with a Components Diagram but this a optional
 . A Deployment Diagram is almost always helpful, especially in Cloud Environments
-. Bootstrapping your architecture decision log and start logging your decision that impact your architecture
-. The ADD is optional for now, but it might be a valuable tool when we bootstrap a new system
+. Bootstrapping your architecture decision log and start logging the decisions that impact your architecture
+. The ADD is optional for now, but it might be a valuable tool especially when bootstraping a new system. The ADD can also act as a "step back and think" as you rush through delvering functional features.
 ====
 ****
