@@ -1,5 +1,5 @@
 // Architecture Design Presentation
-// Run with: npx asciidoctor-revealjs slides/adp.adoc -o docs/modules/ROOT/partials/adp.html -r asciidoctor-kroki
+// Run with: npx asciidoctor-revealjs docs/modules/adp/adp.adoc -o build/site/xxx-archi/0.0.1/adp/adp.html -r asciidoctor-kroki   
 
 // revealjs settings
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.4.0
@@ -11,41 +11,114 @@
 :revealjs_slideNumber: h.v
 
 // architecture model
-:modeldir: ../models
+:modeldir: ../../../models/arc
 
 // Slides
 = Architecture Design Presentation
 
-== Slide 1
+== Introduction
+[.fragment]
+--
+Describes the role and responsibility of the system
+Introduce the team managing it
+--
 
-* Foo
-* Bar
-* World
 
-== System Context
+== Requirements
+[.fragment]
+--
+Short description of the functional requirements and driving forces
+--
 
-[structurizr,main,svg,view-key=SystemContext]
+[.notes]
+--
+* (optional, horizontal) Add extract (or abstract) of key requirements
+--
+
+
+== Quality
+[.fragment]
+--
+The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders.
+--
+
+[.notes]
+--
+* (optional, horizontal) Explain in more detail and with scenarios the full tree of more detailed -ilities considered 
+--
+
+
+== Constraints
+[.fragment]
+--
+Any requirement that constraints software architects/engineers in their freedom of design and implementation decisions or decision about the development process. 
+--
+
+
+== System Context View
+
+[structurizr,main,svg,view-key=SoftwareSystem-SystemContext]
 ----
 include::{modeldir}/workspace.dsl[]
 ----
 
-== Containers
+[.notes]
+--
+* Explain the *business context* (users, roles, personas)
+* Explain the *technical context* (connected systems outside the scope, protocols)
+--
 
-[structurizr,main,svg,view-key=Containers]
+== Decisions
+[.fragment]
+--
+Important, expensive, large scale or risky architecture decisions including rationales.
+Link to ADR!
+--
+
+
+== Containers View
+
+[structurizr,main,svg,view-key=SoftwareSystem-Container]
 ----
 include::{modeldir}/workspace.dsl[]
 ----
 
-== Components
+[.notes]
+--
+* Explain the *high-level* building blocks of the system
+--
 
-[structurizr,main,svg,view-key=Components]
+
+== Components View
+
+[structurizr,main,svg,view-key=SoftwareSystem-Component-WebApp]
 ----
 include::{modeldir}/workspace.dsl[]
 ----
 
-== Deployment
+[.notes]
+--
+* Explain more in detail the key lower-level components
+--
 
-[structurizr,main,svg,view-key=LiveDeployment]
+
+== Deployment View
+
+[structurizr,main,svg,view-key=SoftwareSystem-Deployment-Production]
 ----
 include::{modeldir}/workspace.dsl[]
 ----
+
+[.notes]
+--
+* Explain the production technical implementation
+* (Optional) Add additional environment deployments if they differ
+--
+
+
+== Risks and Technical Debt
+
+[.fragment]
+--
+A list of identified technical risks or technical debts, ordered by priority
+--
