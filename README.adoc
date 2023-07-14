@@ -1,0 +1,127 @@
+= Architecture - Documentation Template
+
+[.text-center]
+*_Architecture Documentation Template as Code!_*
+
+Bootstrap your Architecture Documentation with the following features depending your needs !
+
+* An *Architectural Design Document (ADD)* template based on _arc42_
+* A quicker *Architecture Design Presentation (ADP)* template to present your architecture
+* *Architecture Diagrams (DIA)* as code based on the _C4_ and generated from a _Structurizr_ model
+* *Architectural Decision Records (ADR)* based on the popular template of https://github.com/mtnygard[Michael Nygard]
+
+
+
+****
+This project uses or is inspired the folllowing OpenSource projects:
+
+* https://asciidoctor.org/[Asciidoctor] and https://antora.org/[Antora] as static site generator for documentation
+* https://c4model.com/[C4Models] as methodology to produce clear, standardized architecture schema
+* https://arc42.org/[Arc42] offers a clear, simple and effective structure to document and communicate your software system
+* https://github.com/structurizr/dsl[Structurizr DSL] as the Domain Specific Language to describe architecture and diagrams the C4 way
+* https://www.kroki.io[Kroki!] as the service to transform dsl to png/svg representation within Asciidoctor via a https://github.com/ggrossetie/asciidoctor-kroki[extension]. Kroki can support lot's of different dsl and graphical languages and might be usefull for other types of diagram. Moreover, kroki is natively integrated into https://docs.gitlab.com/ee/administration/integration/kroki.html[GitLab]!
+****
+
+
+== Getting Started
+
+=== Prerequisite
+
+To generate the diagrams, you need an instance of _kroki!_. You can use the free supplied service at https://kroki.io[https://kroki.io] (hosted on https://www.exoscale.com/[exoscale]). In a controlled environment, it is advised to use a docker image locally during the generation or to self-host a production instance inside your network.
+
+[source,bash]
+----
+> docker run -it --rm --name kroki -p 8010:8000 yuzutech/kroki
+----
+
+
+=== Usage
+
+==== Generate the documentation site
+
+To generate your self-contain documentation site, you have to run the provided local playbook (`antora-playbook-local.yaml`) and the site will be generated in the `build` folder.
+
+``` 
+> npx antora antora-playbook-local.yaml
+> open build/site/xxx-archi/0.0.1/index.html
+``` 
+
+_Antora_ is a very flexible documentation system, it can fetch and build documentation from different sources while maintaining a visual coherence and managing actively the upstream versions. To generate the full documentation as part of another documentation system, register this archotecture module into the system target playbook configuration. 
+
+It is especially useful:
+
+* if you want to have all the architectural documentation on one single static site
+* or, on the contrary, you want to collocate the architecture documentation with the rest of the product documentation
+* or, finally, if you want both!
+
+[source,yaml]
+----
+content: 
+  sources: 
+  - url: https://git-service.com/org/repo-z.git 
+    branches: [v1.*, v2.*, !v1.2] 
+    start_paths: path-to/content-source-root-{item..item} 
+  - url: https://git-service.com/org/repo-y.git 
+    branches: [] 
+    tags: [release/*, '!release/*-patch'] 
+    start_path: path-to/content-source-root 
+    edit_url: '{web_url}/blob/{refname}/{path}' 
+  - url: https://git-service.com/org/repo-x.git 
+    branches: v* 
+    version: true 
+...
+----
+
+For more options on configuring content sources refer to the https://docs.antora.org/antora/latest/playbook/configure-content-sources/[Antora Documentation].
+
+
+==== Genenerate the schemas manually
+
+Use `curl` or any HTTP client to convert the view to image representations 
+
+For example with svg files:
+
+[source,bash]
+----
+> cd models/arc
+> curl "https://kroki.io/structurizr/svg/?view-key=SoftwareSystem-SystemContext" --data-binary '@workspace.dsl' --output ../../build/adhoc/archi-view-context.svg --create-dirs
+> curl "https://kroki.io/structurizr/svg/?view-key=SoftwareSystem-Container" --data-binary '@workspace.dsl' --output ../../build/adhoc/archi-view-container.svg --create-dirs
+> curl "https://kroki.io/structurizr/svg/?view-key=SoftwareSystem-Component-WebApp" --data-binary '@workspace.dsl' --output ../../build/adhoc/archi-view-component-webapp.svg --create-dirs
+> curl "https://kroki.io/structurizr/svg/?view-key=SoftwareSystem-Deployment-Production" --data-binary '@workspace.dsl' --output ../../build/adhoc/archi-view-deployment-production.svg --create-dirs
+----
+
+Checkout the https://docs.kroki.io/kroki/[kroki! documentation] for more examples. 
+
+
+==== Generate the presentation manually
+
+To generate the ADP presentation, you just have to call the _asciidoc converter_ and open the _revealjs_ presentation.
+
+[source,bash]
+----
+> npx asciidoctor-revealjs docs/modules/adp/adp.adoc -o build/site/xxx-archi/0.0.1/adp/adp.html -r asciidoctor-kroki
+> open build/site/xxx-archi/0.0.1/adp/adp.html 
+----
+
+
+==== Using structurizer-light to develop the architecture model
+
+While iterating on your _structurizr_ model, it might be useful to use the light version (free) of the application available as a docker image. That lets you live preview the resulting diagrams and some added value infoormation from your model. 
+
+[source,bash]
+----
+> docker run -it --rm --name structurizr -p 8020:8080 -v ./models/arc:/usr/local/structurizr structurizr/lite
+> open http://localhost:8020
+----
+
+
+=== Roadmap
+
+* [ ] Publish Documentation to Confluence (instead of Antora) using https://confluence-publisher.atlassian.net/wiki/spaces/CPD/overview[confluence-publisher]
+* [ ] Create a nicer ui template than the default Antora  
+
+
+=== Authors
+
+For help ask mailto:marc@0x01.ooo[me] !
+
