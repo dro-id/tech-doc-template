@@ -1,5 +1,5 @@
 site:
-  title: Architecture Documentation Template
+  title: PAM Tech Documentation
   url: http://localhost:8080
 content:
   sources:
@@ -15,7 +15,7 @@ asciidoc:
     sectanchors: true
     kroki-server-url: https://kroki.io
     kroki-default-format: svg@
-    kroki-fetch-diagram: false
+    kroki-fetch-diagram: true
     imagesoutdir: img/
   extensions:
     - asciidoctor-kroki
