@@ -33,7 +33,7 @@ To produce the schema you have basically two possibilities:
 ====
 ****
 
-[structurizr,main,svg,view-key=Components]
+[structurizr,main,svg,view-key=SoftwareSystem-Component-WebApp]
 ----
 include::ROOT:partial$/workspace.dsl[]
 ----

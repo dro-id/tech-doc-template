@@ -1,1 +1,1 @@
-../../../../models/workspace.dsl
+../../../../models/arc/workspace.dsl

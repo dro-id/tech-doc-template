@@ -39,7 +39,7 @@ To produce the schema you have basically two possibilities:
 ====
 ****
 
-[structurizr,main,svg,view-key=LiveDeployment]
+[structurizr,main,svg,view-key=SoftwareSystem-Deployment-Production]
 ----
 include::ROOT:partial$/workspace.dsl[]
 ----
