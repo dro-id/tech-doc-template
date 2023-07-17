@@ -1,5 +1,5 @@
 = Component Diagram
-Marc Guillen <mguillen@pictet.com>
+Marc Guillen <marc@0x01.ooo>
 v1.0, 2022-05-01
 
 The Component diagram shows how a container is made up of a number of "components", what each of those components are, their responsibilities and the technology/implementation details. This diagram that further refines the Container Diagram is intended to technical users inside and outside the product team such as developers and architects.

@@ -13,7 +13,7 @@ Based on the excellent arc42 architecture documentation template
 * revision number: 8.2 EN
 * revision date: January 2023
 
-PAM Architects have modified it to reflect the organization goals.
+Architects have modified it to reflect the organization goals.
 
 Arc42 is created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors.
 

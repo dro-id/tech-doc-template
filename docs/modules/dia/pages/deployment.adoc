@@ -1,5 +1,5 @@
 = Deployment Diagram
-Marc Guillen <mguillen@pictet.com>
+Marc Guillen <marc@0x01.ooo>
 v1.0, 2022-05-01
 
 The Deployment Diagram describes the static, instantiated deployment view of the system. Container instances and related systems instances are mapped to deployment nodes, highlighting the physical static topology and associated technologies. This diagram is intended to technical users inside and outside the product team such as developers and architects.
