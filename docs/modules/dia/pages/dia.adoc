@@ -1,1 +1,5 @@
 = Architecture Diagrams
+
+--
+include::dia:partial$dia_list.adoc[]
+--
