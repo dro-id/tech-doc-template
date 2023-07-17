@@ -10,7 +10,7 @@ It contains:
 
 * A minimalistic Architecture Design Document (ADD) highlighting the most important design drivers, the context, the environment, the decomposition into containers/components and finally the deployment of the system. Basically anything that would give context to the code! This is optional but recommended for all new systems/products.
 * A set of Architecture Diagrams showing visually the context, containers, components and deployment following a https://c4model.com[C4 Model]. A picture is worth thousand words!
-* The https://github.com/joelparkerhenderson/architecture-decision-record[Architecture Design Records (ADR)] for the system, martializing the team consensus on significant architectural decisions. There are many different, we choose an aaproach proposed by https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Michael Nygard].
+* The https://github.com/joelparkerhenderson/architecture-decision-record[Architecture Design Records (ADR)] for the system, martializing the team consensus on significant architectural decisions. There are many different, we choose an approach proposed by https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions[Michael Nygard].
 
 == Contributing
 
