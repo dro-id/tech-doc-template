@@ -42,8 +42,8 @@ To generate the diagrams, you need an instance of _kroki!_. You can use the free
 To generate your self-contain documentation site, you have to run the provided local playbook (`antora-playbook-local.yaml`) and the site will be generated in the `build` folder.
 
 ``` 
-> npx antora antora-playbook-local.yaml
-> open build/site/xxx-archi/0.0.1/index.html
+> npx antora antora-playbook-standalone.yaml
+> open build/site/product-archi/0.0.1/index.html
 ``` 
 
 _Antora_ is a very flexible documentation system, it can fetch and build documentation from different sources while maintaining a visual coherence and managing actively the upstream versions. To generate the full documentation as part of another documentation system, register this archotecture module into the system target playbook configuration. 
@@ -99,8 +99,8 @@ To generate the ADP presentation, you just have to call the _asciidoc converter_
 
 [source,bash]
 ----
-> npx asciidoctor-revealjs docs/modules/adp/adp.adoc -o build/site/xxx-archi/0.0.1/adp/adp.html -r asciidoctor-kroki
-> open build/site/xxx-archi/0.0.1/adp/adp.html 
+> npx asciidoctor-revealjs docs/modules/adp/adp.adoc -o build/site/product-archi/0.0.1/adp/adp.html -r asciidoctor-kroki
+> open build/site/product-archi/0.0.1/adp/adp.html 
 ----
 
 

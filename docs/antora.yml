@@ -1,5 +1,5 @@
-name: xxx-archi
-title: XXX Architecture
+name: product-archi
+title: Product Architecture
 version: 0.0.1
 nav:
   - modules/ROOT/nav.adoc
