@@ -14,7 +14,7 @@ It contains:
 
 == Contributing
 
-Anyone in PAM can contribute to the template and knowledge base!
+Anyone can contribute to the template and knowledge base!
 
 Feel free to submit PR if you think the documentation needs additions or clarifications. 
 Architects acts as maintainers and will review/discuss your submissions. 
