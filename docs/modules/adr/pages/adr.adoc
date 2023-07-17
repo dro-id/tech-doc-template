@@ -1,4 +1,6 @@
 = Architecture Decision Records (ADR)
 
-include::../nav.adoc
-
++
+--
+include::partial$adr_list.adoc[]
+--
