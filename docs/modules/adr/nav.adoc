@@ -1,4 +1,5 @@
-
+* xref:adr:adr.adoc[Decision Records]
++
 --
 include::adr:partial$adr_list.adoc[]
 --
