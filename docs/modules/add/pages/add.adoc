@@ -1,10 +1,8 @@
-// ARCHITECTURE DESIGN DOCUMENT
-// ====================================
+= Architecture Design Document (ADD)
 
 // Configure EN settings for asciidoc
 include::sections/config.adoc[]
 
-= Architecture Design Document (ADD)
 :toc-title: Table of Contents
 
 // About
