@@ -11,7 +11,7 @@ include::sections/config.adoc[]
 [NOTE]
 ====
 This version of the template contains some help and explanations.
-For documentation of your own system remove them!
+For documentation of your own team remove them!
 ====
 ****
 
@@ -21,4 +21,4 @@ For documentation of your own system remove them!
 
 <<<<
 // 1. Introduction and Goals
-//include::sections/01_introduction_and_goals.adoc[]
+include::sections/01_team_api.adoc[]

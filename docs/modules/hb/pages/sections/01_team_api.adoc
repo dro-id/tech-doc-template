@@ -1,0 +1,67 @@
+== Team API
+
+[cols="1,1", frame=none]
+|===
+a|Team name:: _<your team name>_
+Team mission:: _<your mission statement>_ 
+Team type:: _<Product or Service>_
+Team codes:: _<admin code, trigram>_
+Part of a Platform? (y/n) Platforms:: _<yes or no>_ 
+
+a|Software owned and evolved by this team:: _<software>_
+Versioning approaches:: _<versioning>_
+Wiki or other doocumentation:: _<links>_
+Chat tool channels:: #____slack____ #____teams____ #____matermost____
+Time of daily sync meeting:: _<Xam in room YYY>_ 
+|===
+
+*_Team Typology:_* _<Stream-Aligned, Enabling, Complicated Subsystem, Platform>_
+
+
+=== Who we are 
+
+.Members
+[options="header",cols="3,2,3,3,2,4"]
+|===
+|Team Member|Role|Email|Tel|Chapter|Expectations
+| _<Member-1>_ | _<Role-1>_ | _<Email-1>_ | _<Tel-1>_ | _<Chap†er-1>_ | _<Expectations-1>_
+| _<Member-2>_ | _<Role-2>_ | _<Email-2>_ | _<Tel-2>_ | _<Chapter-2>_ | _<Expectations-2>_
+|===
+
+
+=== When to reach us ?
+
+* Type of iniative
+* Process trigger
+* Subject matter expert
+
+
+=== What we're currently working on
+
+* Our services and systems:
+* Ways of working:
+* Wider cross-team or organisational improvements:
+
+
+=== Teams we currently interact with
+
+*_Team Interaction Modes:_* <Collaboration, X-as-a-Service, Facilitating>
+
+.Interactions
+[options="header",cols="2,2,4,2"]
+|===
+|Team Name/Focus|Interaction Mode|Purpose|Duration
+| _<Team-1>_ | _<Mode-1>_ | _<Purpose-1>_ | _<Duration-1>_ 
+| _<Team-2>_ | _<Mode-2>_ | _<Purpose-2>_ | _<Duration-2>_ 
+|===
+
+
+=== Teams we expect to interact with soon
+
+.Future Interactions
+[options="header",cols="2,2,4,2"]
+|===
+|Team Name/Focus|Interaction Mode|Purpose|Duration
+| _<Team-1>_ | _<Mode-1>_ | _<Purpose-1>_ | _<Duration-1>_ 
+| _<Team-2>_ | _<Mode-2>_ | _<Purpose-2>_ | _<Duration-2>_ 
+|===

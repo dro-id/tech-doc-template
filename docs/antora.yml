@@ -5,7 +5,7 @@ nav:
   # Compose your Technical Documentation
   # Depending the context -> remove entries below and delete related uneeded modules 
   - modules/ROOT/nav.adoc
-  - modules/hb/nav.doc
+  - modules/hb/nav.adoc
   - modules/add/nav.adoc
   - modules/adr/nav.adoc
   - modules/dia/nav.adoc
