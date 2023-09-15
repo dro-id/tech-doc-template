@@ -115,10 +115,40 @@ While iterating on your _structurizr_ model, it might be useful to use the light
 ----
 
 
+==== Deploying to Confluence
+
+Alternatively you can deploy the Team Handbook or Architecture Design Document. 
+
+[source,bash]
+----
+docker run --rm -e ROOT_CONFLUENCE_URL=http://confluence-host \
+   -e SKIP_SSL_VERIFICATION=false \
+   -e MAX_REQUESTS_PER_SECOND=10 \
+   -e CONNECTION_TIME_TO_LIVE=500 \
+   -e USERNAME=username \
+   -e PASSWORD=1234 \
+   -e SPACE_KEY=XYZ \
+   -e ANCESTOR_ID=012345 \
+   -e PAGE_TITLE_PREFIX="Draft - " \
+   -e PAGE_TITLE_SUFFIX=" (V 1.0)" \
+   -e PUBLISHING_STRATEGY=REPLACE_ANCESTOR \
+   -e ORPHAN_REMOVAL_STRATEGY=KEEP_ORPHANS \
+   -e VERSION_MESSAGE="V 1.0" \
+   -e NOTIFY_WATCHERS=true \
+   -e ATTRIBUTES='{"attribute1": "value1", "attribute2": "value2"}' \
+   -e PROXY_SCHEME=https \
+   -e PROXY_HOST=my.proxy.com \
+   -e PROXY_PORT=8443 \
+   -e CONVERT_ONLY=true \
+   -v /Users/mguillen/Devel/projects/tech-doc-template/docs/modules/add/pages:/var/asciidoc-root-folder \
+   confluencepublisher/confluence-publisher:0.0.0-SNAPSHOT
+----
+
+Please see https://confluence-publisher.atlassian.net/wiki/spaces/CPD/overview[confluence-publisher] documentation for more information.
+
 === Roadmap
 
-* [ ] Publish Documentation to Confluence (instead of Antora) using https://confluence-publisher.atlassian.net/wiki/spaces/CPD/overview[confluence-publisher]
-* [ ] Create a nicer ui template than the default Antora  
+* [ ] Create a nicer ui template than the default Antora based on Github design sytem https://primer.style/design/[Primer]
 
 
 === Authors
