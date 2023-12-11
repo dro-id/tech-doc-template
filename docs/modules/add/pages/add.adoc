@@ -8,7 +8,7 @@ include::sections/config.adoc[]
 :toc-title: Table of Contents
 
 // About
-Architcture Design Document based on the excellent _Arc42_ footnote:[Arc42 is created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors. See https://arc42.org.] template.
+Architecture Design Document based on the excellent _Arc42_ footnote:[Arc42 is created, maintained and (C) by Dr. Peter Hruschka, Dr. Gernot Starke and contributors. See https://arc42.org.] template.
 
 * revision number: 8.2 EN
 * revision date: January 2023
