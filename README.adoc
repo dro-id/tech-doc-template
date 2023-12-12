@@ -1,10 +1,11 @@
-= Architecture - Documentation Template
+= Tech Documentation Template
 
 [.text-center]
-*_Architecture Documentation Template as Code!_*
+*_Tech Documentation Template as Code!_*
 
-Bootstrap your Architecture Documentation with the following features depending your needs !
+Bootstrap your Tech Documentation with the following features depending your needs !
 
+* A *Team Handbook* describing your tam API and Operrating Model
 * An *Architectural Design Document (ADD)* template based on _arc42_
 * A quicker *Architecture Design Presentation (ADP)* template to present your architecture
 * *Architecture Diagrams (DIA)* as code based on the _C4_ and generated from a _Structurizr_ model
