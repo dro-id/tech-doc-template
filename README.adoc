@@ -1,17 +1,48 @@
-= Tech Documentation Template
+= README
+:doctype: article
+:repository-url: https://github.com/dro-id/tech-doc-template
+:!showtitle:
+:icons: font
+:imagesdir: docs/assets/img
+:hardbreaks-option:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
 
-[.text-center]
-*_Tech Documentation Template as Code!_*
+// Standard shields and technology skills
+https://github.com/dro-id/tech-doc-template/graphs/contributors[image:https://img.shields.io/github/contributors/dro-id/tech-doc-template.png?style=for-the-badge[https://img.shields.io/github/contributors/dro-id/tech-doc-template]] https://github.com/dro-id/tech-doc-template/network/members[image:https://img.shields.io/github/forks/dro-id/tech-doc-template.svg?style=for-the-badge[https://img.shields.io/github/forks/dro-id/tech-doc-template]] https://github.com/dro-id/tech-doc-template/stargazers[image:https://img.shields.io/github/stars/dro-id/tech-doc-template.svg?style=for-the-badge[https://img.shields.io/github/stars/dro-id/tech-doc-template]] https://github.com/dro-id/tech-doc-template/issues[image:https://img.shields.io/github/issues/dro-id/tech-doc-template.svg?style=for-the-badge[https://img.shields.io/github/issues/dro-id/tech-doc-template]] https://github.com/dro-id/tech-doc-template/blob/master/LICENSE.txt[image:https://img.shields.io/github/license/dro-id/tech-doc-template.svg?style=for-the-badge[https://img.shields.io/github/license/dro-id/tech-doc-template]] https://antora.org[image:https://img.shields.io/badge/-Asciidoctor-orange.svg?style=for-the-badge&logo=asciidoctor[https://img.shields.io/badge/-Asciidoctor-orange]]
 
-Bootstrap your Tech Documentation with the following features depending your needs !
+// Header
 
-* A *Team Handbook* describing your tam API and Operrating Model
-* An *Architectural Design Document (ADD)* template based on _arc42_
-* A quicker *Architecture Design Presentation (ADP)* template to present your architecture
-* *Architecture Diagrams (DIA)* as code based on the _C4_ and generated from a _Structurizr_ model
-* *Architectural Decision Records (ADR)* based on the popular template of https://github.com/mtnygard[Michael Nygard]
+++++
+<div style="text-align: center"  align="center">
+	<pre>
+░░░▄▀▄░█░█░▄▀▄░▀█░░░░░░▀█▀░█▀▀░█▄█░█▀█░█░░░█▀█░▀█▀░█▀▀░░░░
+░░░█/█░▄▀▄░█/█░░█░░▄▄▄░░█░░█▀▀░█░█░█▀▀░█░░░█▀█░░█░░█▀▀░░░░
+░░░░▀░░▀░▀░░▀░░▀▀▀░░░░░░▀░░▀▀▀░▀░▀░▀░░░▀▀▀░▀░▀░░▀░░▀▀▀░░░░</pre>
+	<h1>Tech Documentation [template]</h1>
+	<p style="text-align: center"  align="center">
+		<i><b>📚 Tech Documentation Template as Code!</b></i>
+		<br><br>
+    <a href="https://codespaces.new/dro-id/tech-doc-template?quickstart=1"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
+		<br>
+	</p>
+</div>
+++++
 
+// Content
 
+=== About
+
+Bootstrap your 📚 _Tech Documentation_ with the following features depending your needs !
+
+* 📔 A *Team Handbook* describing your tam API and Operrating Model
+* 📐 An *Architectural Design Document (ADD)* template based on _arc42_
+* 👨‍🏫 A quicker *Architecture Design Presentation (ADP)* template to present your architecture
+* 🎨 *Architecture Diagrams (DIA)* as code based on the _C4_ and generated from a _Structurizr_ model
+* 📒 *Architectural Decision Records (ADR)* based on the popular template of https://github.com/mtnygard[Michael Nygard]
 
 ****
 This project uses or is inspired the folllowing OpenSource projects:
@@ -23,7 +54,6 @@ This project uses or is inspired the folllowing OpenSource projects:
 * https://www.kroki.io[Kroki!] as the service to transform dsl to png/svg representation within Asciidoctor via a https://github.com/ggrossetie/asciidoctor-kroki[extension]. Kroki can support lot's of different dsl and graphical languages and might be usefull for other types of diagram. Moreover, kroki is natively integrated into https://docs.gitlab.com/ee/administration/integration/kroki.html[GitLab]!
 ****
 
-
 == Getting Started
 
 === Prerequisite
@@ -34,7 +64,6 @@ To generate the diagrams, you need an instance of _kroki!_. You can use the free
 ----
 > docker run -it --rm --name kroki -p 8010:8000 yuzutech/kroki
 ----
-
 
 === Usage
 
@@ -75,7 +104,6 @@ content:
 
 For more options on configuring content sources refer to the https://docs.antora.org/antora/latest/playbook/configure-content-sources/[Antora Documentation].
 
-
 ==== Genenerate the schemas manually
 
 Use `curl` or any HTTP client to convert the view to image representations 
@@ -93,7 +121,6 @@ For example with svg files:
 
 Checkout the https://docs.kroki.io/kroki/[kroki! documentation] for more examples. 
 
-
 ==== Generate the presentation manually
 
 To generate the ADP presentation, you just have to call the _asciidoc converter_ and open the _revealjs_ presentation.
@@ -104,7 +131,6 @@ To generate the ADP presentation, you just have to call the _asciidoc converter_
 > open build/site/tech-doc/0.0.1/adp/adp.html 
 ----
 
-
 ==== Using structurizer-light to develop the architecture model
 
 While iterating on your _structurizr_ model, it might be useful to use the light version (free) of the application available as a docker image. That lets you live preview the resulting diagrams and some added value infoormation from your model. 
@@ -114,7 +140,6 @@ While iterating on your _structurizr_ model, it might be useful to use the light
 > docker run -it --rm --name structurizr -p 8020:8080 -v ./models/arc:/usr/local/structurizr structurizr/lite
 > open http://localhost:8020
 ----
-
 
 ==== Deploying to Confluence
 
@@ -150,7 +175,6 @@ Please see https://confluence-publisher.atlassian.net/wiki/spaces/CPD/overview[c
 === Roadmap
 
 * [ ] Create a nicer ui template than the default Antora based on Github design sytem https://primer.style/design/[Primer]
-
 
 === Authors
 
