@@ -52,25 +52,17 @@
 
 Bootstrap your 📚 _Tech Documentation_ with the following features depending your needs !
 
+=== Features
+
 * 📔 A *Team Handbook* describing your tam API and Operrating Model
 * 📐 An *Architectural Design Document (ADD)* template based on _arc42_
 * 👨‍🏫 A quicker *Architecture Design Presentation (ADP)* template to present your architecture
 * 🎨 *Architecture Diagrams (DIA)* as code based on the _C4_ and generated from a _Structurizr_ model
 * 📒 *Architectural Decision Records (ADR)* based on the popular template of https://github.com/mtnygard[Michael Nygard]
 
-****
-This project uses or is inspired the folllowing OpenSource projects:
+=== Getting Started
 
-* https://asciidoctor.org/[Asciidoctor] and https://antora.org/[Antora] as static site generator for documentation
-* https://c4model.com/[C4Models] as methodology to produce clear, standardized architecture schema
-* https://arc42.org/[Arc42] offers a clear, simple and effective structure to document and communicate your software system
-* https://github.com/structurizr/dsl[Structurizr DSL] as the Domain Specific Language to describe architecture and diagrams the C4 way
-* https://www.kroki.io[Kroki!] as the service to transform dsl to png/svg representation within Asciidoctor via a https://github.com/ggrossetie/asciidoctor-kroki[extension]. Kroki can support lot's of different dsl and graphical languages and might be usefull for other types of diagram. Moreover, kroki is natively integrated into https://docs.gitlab.com/ee/administration/integration/kroki.html[GitLab]!
-****
-
-== Getting Started
-
-=== Prerequisite
+==== Prerequisite
 
 To generate the diagrams, you need an instance of _kroki!_. You can use the free supplied service at https://kroki.io[https://kroki.io] (hosted on https://www.exoscale.com/[exoscale]). In a controlled environment, it is advised to use a docker image locally during the generation or to self-host a production instance inside your network.
 
@@ -90,7 +82,7 @@ To generate your self-contain documentation site, you have to run the provided l
 > open build/site/tech-doc/0.0.1/index.html
 ``` 
 
-_Antora_ is a very flexible documentation system, it can fetch and build documentation from different sources while maintaining a visual coherence and managing actively the upstream versions. To generate the full documentation as part of another documentation system, register this archotecture module into the system target playbook configuration. 
+_Antora_ is a very flexible documentation system, it can fetch and build documentation from different sources while maintaining a visual coherence and managing actively the upstream versions. To generate the full documentation as part of another documentation system, register this architecture module into the system target playbook configuration. 
 
 It is especially useful:
 
@@ -118,7 +110,7 @@ content:
 
 For more options on configuring content sources refer to the https://docs.antora.org/antora/latest/playbook/configure-content-sources/[Antora Documentation].
 
-==== Genenerate the schemas manually
+==== Genenerate the diagrams manually
 
 Use `curl` or any HTTP client to convert the view to image representations 
 
@@ -190,7 +182,23 @@ Please see https://confluence-publisher.atlassian.net/wiki/spaces/CPD/overview[c
 
 * [ ] Create a nicer ui template than the default Antora based on Github design sytem https://primer.style/design/[Primer]
 
+=== Acknowledgements
+
+****
+This project uses or is inspired the folllowing OpenSource projects:
+
+* https://asciidoctor.org/[Asciidoctor] and https://antora.org/[Antora] as static site generator for documentation
+* https://c4model.com/[C4Models] as methodology to produce clear, standardized architecture schema
+* https://arc42.org/[Arc42] offers a clear, simple and effective structure to document and communicate your software system
+* https://github.com/structurizr/dsl[Structurizr DSL] as the Domain Specific Language to describe architecture and diagrams the C4 way
+* https://www.kroki.io[Kroki!] as the service to transform dsl to png/svg representation within Asciidoctor via a https://github.com/ggrossetie/asciidoctor-kroki[extension]. Kroki can support lot's of different dsl and graphical languages and might be usefull for other types of diagram. Moreover, kroki is natively integrated into https://docs.gitlab.com/ee/administration/integration/kroki.html[GitLab]!
+****
+
+=== License
+
+⚖️ link:./LICENSE[MIT]
+
 === Authors
 
-For help ask mailto:marc(at)0x01.ooo[me] !
+👨🏻‍💻 For help ask mailto:marc(at)0x01.ooo[me] !
 
