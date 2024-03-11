@@ -1,5 +1,6 @@
 = README
 :doctype: article
+:fragment:
 :repository-url: https://github.com/dro-id/tech-doc-template
 :!showtitle:
 :icons: font
